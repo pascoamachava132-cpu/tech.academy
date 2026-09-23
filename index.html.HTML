@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Academy · Início</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f5f7fe; color: #1a1a2e; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        nav { background: #0f0e2a; padding: 0 20px; position: sticky; top: 0; z-index: 999; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo { color: #fff; font-weight: 800; font-size: 1.6rem; padding: 18px 0; cursor: pointer; text-decoration: none; }
+        .logo span { color: #ff7b3a; }
+        .menu-list { display: flex; list-style: none; gap: 4px; }
+        .menu-btn { background: transparent; border: none; padding: 22px 18px; color: #c8d0f0; font-weight: 600; font-size: 0.95rem; border-radius: 8px; cursor: pointer; text-decoration: none; transition: 0.2s; }
+        .menu-btn:hover, .menu-btn.active { background: #2a2850; color: #ff7b3a; }
+        section { padding: 60px 0; min-height: 80vh; }
+        h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+        h1 .destaque { color: #ff7b3a; }
+        p { color: #2d2b4a; margin-bottom: 18px; font-size: 1.05rem; }
+        .btn { display: inline-block; background: #ff7b3a; color: #fff; padding: 14px 34px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; box-shadow: 0 8px 18px rgba(255, 123, 58, 0.3); }
+        .btn:hover { background: #e86520; transform: translateY(-3px); }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        img { width: 100%; border-radius: 16px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tech<span>Academy</span></a>
+            <div class="menu-list">
+                <a href="index.html" class="menu-btn active">Início</a>
+                <a href="sobre.html" class="menu-btn">Sobre</a>
+                <a href="cursos.html" class="menu-btn">Cursos</a>
+                <a href="inscricao.html" class="menu-btn">Inscrição</a>
+                <a href="depoimentos.html" class="menu-btn">Depoimentos</a>
+                <a href="contato.html" class="menu-btn">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h1>Domine a <span class="destaque">Programação</span> e mude sua carreira</h1>
+                    <p>Na Tech Academy, formamos desenvolvedores prontos para o mercado em apenas 12 meses. Metodologia prática, projetos reais e mentoria com especialistas.</p>
+                    <a href="cursos.html" class="btn">Ver cursos →</a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Estudante programando">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
